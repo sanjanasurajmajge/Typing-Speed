@@ -1,15 +1,12 @@
 <?php
-print"<h3> Visitors Count</h3>";
-$name="counter.txt";
-$file=fopen($name,"r");
-$hits=fname($file,"%d");
-fclose($file);
 
-$hits[0]++;
-$file=fopen($name,"w");
-fprintf($file,"%d",$hits[0];
-fclose($file);
+$count_page = ("hitcount.txt");
+$hits = file($count_page);
+$hits[0] ++;
 
-print"Total Visitors Count:"$hits[0];
+$fp = fopen($count_page , "w");
+fputs($fp , "$hits[0]");
+fclose($fp);
+echo $hits[0];
+
 ?>
-
