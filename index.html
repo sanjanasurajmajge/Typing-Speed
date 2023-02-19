@@ -71,8 +71,8 @@
  <h2> 
 
          
-
-            echo "<?php
+<?php
+            echo "
             print"<h3> Visitors Count</h3>";
             $name="counter.txt";
             $file=fopen($name,"r");
@@ -84,7 +84,7 @@
             fprintf($file,"%d",$hits[0];
             fclose($file);
             
-            print"Total Visitors Count:".$hits[0];
+            print"Total Visitors Count:".$hits[0];"
         ?> 
 
         </h2>
