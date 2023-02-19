@@ -68,7 +68,9 @@
       <footer> <center>  Initial and Final ver 1.0 </center></footer>
     </div>
 
-
+<?php
+include("count.php");
+?>
  
     
 
