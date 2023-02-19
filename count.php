@@ -1,12 +1,12 @@
 <?php
 
-$count_page = ("hitcount.txt");
-$hits = file($count_page);
-$hits[0] ++;
+session_start();
 
-$fp = fopen($count_page , "w");
-fputs($fp , "$hits[0]");
-fclose($fp);
-echo $hits[0];
+if(isset($_SESSION['views']))
+	$_SESSION['views'] = $_SESSION['views']+1;
+else
+	$_SESSION['views']=1;
+	
+echo"views = ".$_SESSION['views'];
 
 ?>
