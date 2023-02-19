@@ -68,8 +68,21 @@
       <footer> <center>  Initial and Final ver 1.0 </center></footer>
     </div>
 
-    <h2> Visitors count</h2>
-    <?php include '' ?>
+    <h3> Visitors Count</h3>
+     <?php
+    
+echo $name="counter.txt";
+$file=fopen($name,"r");
+$hits=fname($file,"%d");
+fclose($file);
+
+$hits[0]++;
+$file=fopen($name,"w");
+fprintf($file,"%d",$hits[0];
+fclose($file);
+
+print"Total Visitors Count:"$hits[0];
+?>
 
     
 
