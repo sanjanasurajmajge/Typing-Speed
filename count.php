@@ -12,4 +12,3 @@ fclose($file);
 
 print"Total Visitors Count:"$hits[0];
 ?>
-
