@@ -10,6 +10,6 @@ $file=fopen($name,"w");
 fprintf($file,"%d",$hits[0];
 fclose($file);
 
-print"Total Visitors Count:".$hits[0];
+print"Total Visitors Count:"$hits[0];
 ?>
 
